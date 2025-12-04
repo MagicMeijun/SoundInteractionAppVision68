@@ -120,6 +120,8 @@ class MainActivity : ComponentActivity() {
                             onNavigateToRanking = { navController.navigate(Screen.Ranking.route) }
                         )
                     }
+
+                    ////////////////////// 以下新增內容 //////////////////////
                     // --- 排名系統 (Ranking) ---
                     composable(Screen.Ranking.route) {
                         NewRankingScreenContent(
@@ -136,6 +138,7 @@ class MainActivity : ComponentActivity() {
                             soundManager = soundManager
                         )
                     }
+                    ////////////////////// 以上新增內容 //////////////////////
 
                     composable(Screen.GameLevel2.route) {
                         Level2FindAnimalScreen(onNavigateBack = { navController.popBackStack() })

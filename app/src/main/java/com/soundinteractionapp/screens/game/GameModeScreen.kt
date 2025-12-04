@@ -8,6 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.soundinteractionapp.Screen
 import androidx.compose.material.icons.Icons
+
 import androidx.compose.material.icons.filled.EmojiEvents // 獎盃圖示
 
 /**
@@ -38,7 +39,8 @@ fun GameModeScreenContent(onNavigateBack: () -> Unit, onNavigateToLevel: (String
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.onSurface
                 )
-                // 佔位，保持對齊
+
+                ////////////////////// 以下新增內容 //////////////////////
                 // 【替換】右側：新增的排名圖示按鈕 (獎盃)
                 IconButton(
                     onClick = onNavigateToRanking, // 點擊時呼叫導航
@@ -52,6 +54,9 @@ fun GameModeScreenContent(onNavigateBack: () -> Unit, onNavigateToLevel: (String
                     )
                 }
             }
+                ////////////////////// 以上新增內容 //////////////////////
+
+
 
             // 中間：關卡選擇區 (2x2 Grid)
             Column(
